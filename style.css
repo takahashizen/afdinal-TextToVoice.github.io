@@ -1,0 +1,102 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+/* Overlay */
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(1, 255, 128), rgb(0, 110, 255));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Converter */
+.converter-center{
+    /* background-color: white; */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+.title h1 span{
+    color: gold;
+}
+.text-container{
+    width: 60%;
+    box-sizing: border-box;
+    height: 50%;
+    /* background-color: white; */
+    margin-top: 0;
+}
+.text-container textarea{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.295);
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    padding: 1rem;  
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    resize: none;
+}
+.text-container textarea::placeholder{
+    color: rgba(255, 255, 255, 0.466);
+    font-style: italic;
+}
+.btn-container{
+    width: 60%;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+#select-voice{
+    width: 70%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 1.2rem;
+}
+.convert-btn{
+    padding: 0.5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: gold;
+    color: black;
+    border-radius: 1rem;
+    text-transform: capitalize;
+    transition: all 0.3s;
+}
+.convert-btn:hover{
+    background-color: goldenrod;
+    color: white;
+    cursor: pointer;
+}

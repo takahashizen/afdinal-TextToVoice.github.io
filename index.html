@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Voice Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8b184f740.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Heebo:wght@300&family=Inconsolata&family=Josefin+Sans:wght@400;500&family=Kanit:wght@300&family=Mukta:wght@600&family=Orbitron:wght@500&family=Pangolin&family=Quicksand:wght@600&family=REM&family=Source+Code+Pro:wght@200&family=Teko&family=Titillium+Web&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay">
+        <section class="converter-center">
+            <div class="title">
+                <h1>text to voice <span>converter</span></h1>
+            </div>
+            <div class="text-container">
+                <textarea name="Text" id="text-to-convert" placeholder="Enter text to convert..."></textarea>
+            </div>
+            <div class="btn-container">
+                <select id="select-voice"></select>
+                <button class="convert-btn">
+                    <i class="fa-solid fa-play"></i> listen
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
